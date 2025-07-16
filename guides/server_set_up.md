@@ -30,7 +30,9 @@ PasswordAuthentication no
 ## Restart SSH server:
 ```bash
 sudo service ssh restart
+exit
 ```
+And login as `www` user
 
 ## Init — must-have packages
 
@@ -53,6 +55,8 @@ sudo apt-get install -y python3.12-venv python3-pip
 python3.12 -m pip install -U pip
 ```
 
+
+## Firewall setting up (optional, do that if you really need it)
 ```
 sudo apt update
 sudo apt install ufw

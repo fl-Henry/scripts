@@ -32,3 +32,8 @@ sudo systemctl status myproject
 ```
 sudo mv /etc/systemd/system/myproject.service /etc/systemd/system/<NEW_NAME>.service
 ```
+
+
+```bash
+sudo journalctl -u bot6798232901.service --since "2025-05-17 12:00"
+```

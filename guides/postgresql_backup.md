@@ -54,6 +54,9 @@ sudo cp /var/lib/postgresql/db_dump.sql db_dump.sql
 
 format like this:
 ```sql
+TRUNCATE TABLE player_lotto_txs;
+
+
 COPY public.player_lotto_txs (id, wallet_from, wallet_to, txid, "timestamp", symbol, quantity) FROM stdin;
 1	0xf37a22e8bf0514787c5dd2796ae7382578a6f72d	0xc6dad0643fb91eba46b20d1248ac575fc2352b60	0x993e405937465c721289d3d1e4c05dffe4c01b6dd68ac3e115f2f92aaaa5557a	1725665327	ETH	0.01
 71	0x17d2836e7948f87837d5bb32c0eee1e81d0dd090	0xc6dad0643fb91eba46b20d1248ac575fc2352b60	0xb8d733eb3d73643c1e94fae71d6230a1ee2608d0a742dc8639512df8e37b0ff4	1737065459	ETH	0.01

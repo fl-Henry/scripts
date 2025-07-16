@@ -20,3 +20,20 @@ ssh -T git@github.com
 ```bash
 git clone git@github.com:username/repository.git
 ```
+
+```bash
+
+git reset --hard origin/main
+git fetch
+git rebase origin/main
+
+```
+
+```bash
+git pull origin main 
+```
+
+# Change git domain
+```bash
+awk '{gsub("gitlab.com", "ssh.boxexchanger.net")}1' .git/config > temp && mv temp .git/config
+```
