@@ -193,3 +193,42 @@ server {
     }
 }
 ```
+
+NodeJS + React
+```
+server {
+    listen 80;
+    server_name henry-jefferson.com www.henry-jefferson.com;
+
+    # Redirect HTTP to HTTPS
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name henry-jefferson.com www.henry-jefferson.com;
+
+    # SSL certificates
+    ssl_certificate /etc/ssl/henry_jefferson_com/henry-jefferson.com_ssl_certificate.cer;
+    ssl_certificate_key /etc/ssl/henry_jefferson_com/_.henry-jefferson.com_private_key.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+
+    access_log /var/log/nginx/nginx.vhost.access.log;
+    error_log /var/log/nginx/nginx.vhost.error.log;
+
+    root /var/www/henry-jefferson.com;
+    index index.html index.htm;
+
+    location /learn_arg/api/ {
+        rewrite ^/learn_arg/api/(.*)$ /$1 break;
+        proxy_pass http://localhost:8084;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+}
+```

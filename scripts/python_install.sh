@@ -1,4 +1,6 @@
 #! /bin/bash
+
+
 mkdir ~/install && cd ~/install
 sudo wget https://www.python.org/ftp/python/3.12.1/Python-3.12.1.tgz 
 sudo tar xzf Python-3.12.1.tgz
