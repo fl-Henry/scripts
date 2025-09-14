@@ -37,3 +37,9 @@ git pull origin main
 ```bash
 awk '{gsub("gitlab.com", "ssh.boxexchanger.net")}1' .git/config > temp && mv temp .git/config
 ```
+
+# merge main into a side branch
+```
+git checkout issue-30
+git merge origin/main
+```

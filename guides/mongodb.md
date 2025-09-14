@@ -62,3 +62,9 @@ db.createUser({
   ]
 })
 ```
+
+#### Delete a database
+```mongosh
+use your_database_name
+db.dropDatabase()
+```

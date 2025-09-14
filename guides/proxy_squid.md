@@ -97,6 +97,10 @@ From a client system or using `curl`:
 ```bash
 curl -x http://66.179.255.244:3128 https://ifconfig.me/
 ```
+```powershell
+$response = Invoke-WebRequest -Uri "https://ifconfig.me/" -Proxy "http://66.179.255.244:3128"
+$response.Content
+```
 
 You should get the HTML of the page if it's working.
 
