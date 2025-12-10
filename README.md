@@ -19,12 +19,13 @@ Created to avoid searching for information over and over again
 - [Nginx](guides/nginx.md)
 - [RDP](guides/rdp.md)
 - [ufw](guides/ufw.md)
-- [NodeJS](https://github.com/nodesource/distributions/blob/master/DEV_README.md)
+- [NodeJS](https://github.com/nodesource/distributions/blob/master/DEV_README.md) // [install.sh](scripts/nodejs_install.sh)
 
 ## Python
 
 - [Python3.12 install .sh](scripts/python_install.sh)
 - [Gunicorn](guides/gunicorn.md)
+- [RUFF](scripts/ruff.toml)
 
 ## JS
 
