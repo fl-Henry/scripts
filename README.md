@@ -26,6 +26,7 @@ Created to avoid searching for information over and over again
 - [Python3.12 install .sh](scripts/python_install.sh)
 - [Gunicorn](guides/gunicorn.md)
 - [RUFF](scripts/ruff.toml)
+- [Init Python project](scripts/init_python.ps1)
 
 ## JS
 
