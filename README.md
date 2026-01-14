@@ -26,7 +26,7 @@ Created to avoid searching for information over and over again
 - [Python3.12 install .sh](scripts/python_install.sh)
 - [Gunicorn](guides/gunicorn.md)
 - [RUFF](scripts/ruff.toml)
-- [Init Python project](scripts/init_python.ps1) // `irm https://raw.githubusercontent.com/fl-Henry/scripts/refs/heads/main/scripts/init_python.ps1 | iex`
+- [Init Python project](guides/init_python.md) // [init_python.ps1](scripts/init_python.ps1) // `irm https://raw.githubusercontent.com/fl-Henry/scripts/refs/heads/main/scripts/init_python.ps1 | iex`
 
 ## JS
 
